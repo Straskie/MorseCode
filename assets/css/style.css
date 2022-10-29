@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/morseCode/assets/img/pexels-imustbedead-11209165_edit_602662304787205.jpg);
+    width: 100vw;
+    background-size: cover;
+    background-position: 0% 0%;
+    position: fixed;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.headline {
+    font-size: 4vh;
+    text-align: center;
+    color: #03000f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 10vh;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #00eca9e5, #5e3edee5);
+}
+textarea:focus::placeholder{
+    color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+}
+#mainDiv{
+    margin-top:80px;  
+}
+#encodeEnter{
+    width:200px;
+    height:50px;
+    background-color: #00ECAA;;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    display:block;
+    margin:15px;
+}
+#decodeEnter{
+    width:200px;
+    height: 50px;
+    background-color:#5d3ede;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    display:block;
+    margin:15px;
+}
+#encodeEnter{
+    margin-top:50px;
+}
+/* encode div */
+#encodeDiv , #decodeDiv{
+    margin-top:20px;
+    opacity:0;
+    display:none;
+}
+#encText , #decCode{
+    width:300px;
+    height:180px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;    
+}
+#encResult , #decResult{
+    width:300px;
+    height:200px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    margin-top:10px;
+    display:none;
+}
+#encBtn{
+    background-color:#00ECAA;
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    display:block;
+}
+#decBtn{
+    background-color:#5d3ede;
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    display:block;
+}
+#encBack , #decBack{
+    font-size: 22px;
+    margin-left: 10px;
+    background-color:transparent;
+    border:none;
+}
+/* encode div */
+#encodeDiv , #decodeDiv{
+    margin-top:20px;
+    opacity:0;
+    display:none; 
+}
+#encText , #decCode{
+    width:300px;
+    height:180px;
+    border:none;    
+}
+#encResult , #decResult{
+    width:300px;
+    height:200px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    margin-top:10px;
+    display:none;
+}
+#decBtn{
+    background-color:#5d3ede;
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    margin-top:10px;
+    display:inline;
+}
+#encBtn{
+    background-color:#00ECAA;
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    margin-top:10px;
+    display:inline;
+}
+#encBack , #decBack{
+    font-size: 22px;
+    background-color:transparent;
+    border:none;
+}
+#decBtn:hover, #encBtn:hover, #decodeEnter:hover, #encodeEnter:hover{
+    transform: scale(1.05);
+    box-shadow: #fff 0 0 10px;
+    border: 1px solid #fff;
+}
+#encBack:hover , #decBack:hover{
+    box-shadow: #fff 0 0 10px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(37, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    box-shadow: 2px 2px 5px;
+    margin-top:10px;
+    background-color: rgba(0, 0, 0, 0.459);
+    }
+.bggreen{
+    background-color: #00ECAA;
+    text-align: center;
+}
+.bgpurple{
+    background-color: #5d3ede;
+    text-align: center;
+}
+/* --super-green: #00ECAA;
+--super-lila: #5d3ede;
+--super-blau: #070021;
+--super-black: #03000f;
+--super-white: #fff;
+--super-yellow: #ffda1a;
+--super-red: #F10606;
+--clr-super-white: hsl(0,0%,100%);
+--clr-super-yellow: hsl(50,100%,55%);
+--clr-super-green: hsl(163,100%,46%);
+--clr-super-lila: hsl(252,71%,56%);
+--clr-super-lila-shadow: hsl(252,71%,40%);
+--clr-super-blue: hsl(253,100%,6%);
+--clr-super-black: hsl(252,100%,3%); */
